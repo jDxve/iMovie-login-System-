@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iMovie Login & Registration Form</title>
+    <link rel="stylesheet" href="iMovie.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  </head>
+  <body>
+    <!-- Header -->
+  
+    
+    <header class="header" id="home">
+      <div class="nav"><button class="button" id="form-open">Login</button></div>
+    </header>
+    <!-- Home -->
+    <section class="home">
+      <div class="form_container">
+        <i class="uil uil-times form_close"></i>
+        <!-- Login From -->
+        <div class="form login_form">
+          <form action="#">
+            <h2 class="login_title">Login</h2>
+
+            <div class="input_box">
+              <input type="email" placeholder="Email" required />
+              <i class="uil uil-envelope-alt email"></i>
+            </div>
+            <div class="input_box">
+              <input type="password" placeholder="Password" required />
+              <i class="uil uil-lock password"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+
+            <div class="option_field">
+              <span class="checkbox">
+                <input type="checkbox" id="check" />
+                <label for="check">Remember me</label>
+              </span>
+              <a href="#" class="forgot_pw">Forgot password?</a>
+            </div>
+
+            <button class="button" id="Buttonlogin">Login</button>
+
+            <div class="login_signup">Don't have an account? <a href="#" id="signup">Signup</a></div>
+          </form>
+        </div>
+
+        <!-- Signup From -->
+        <div class="form signup_form">
+          <form action="#" id="signupForm">
+            <h2>Sign Up</h2>
+
+            <div class="input_box">
+              <input type="text" id="name" placeholder="full name" required />
+              <i class="uil uil-user user"></i>
+            </div>
+        
+              <div class="input_box">
+                <input type="email" id="email" placeholder="Email" required />
+                <i class="uil uil-envelope-alt email"></i>
+              </div>
+        
+              <div class="input_box">
+                <input type="password" id="password" placeholder="Create password" required />
+                <i class="uil uil-lock password"></i>
+                <i class="uil uil-eye-slash pw_hide"></i>
+              </div>
+        
+              <div class="input_box">
+                <input type="password" id="confirmPassword" placeholder="Confirm password" required />
+                <i class="uil uil-lock password"></i>
+                <i class="uil uil-eye-slash pw_hide"></i>
+                <p id="passwordWarning" class="password-warning"></p>
+              </div>
+ 
+              <button type="button" class="button1" id="signupButton">Sign Up</button>
+        
+              <div class="login_signup">Already have an account? <a href="#" id="login">Login</a></div>
+          </form>
+        </div>  
+
+        <div class="signup security_form2" id="securityForm2">
+          <div class="close_icon4" id="close3">&times;</div>
+          <form action="#">
+              <button class="button">Submit</button>
+              <div class="login_signup">
+                  <a href="#" id="backToSignup">Back to Sign Up</a>
+              </div>
+          </form>
+        </div>
+
+
+      <!-- Security Email Form -->
+      <div class="form security_form">
+
+        <div class="close_icon3" id="close2">&times;</div>
+
+        <form action="#">
+            <h2>Email Verification</h2>
+            <p class="p1">Enter your email to reset your password</p>
+
+            <div class="input_box">
+              <input type="email" id="resetEmail" placeholder="Email" required />
+              <i class="uil uil-envelope-alt email"></i>
+            </div>
+
+            <button type="button" id="goreset">Submit</button>
+
+            <div class="login_signup">
+                <a href="#" id="backToLogin">Back to Login</a>
+            </div>
+        </form>
+      </div>
+
+        <!-- Reset form -->
+        <div class="form reset_Form">
+
+          <div class="close_icon3" id="close4">&times;</div>
+
+          <form action="#" method="POST">
+              <h2>Password Reset!</h2>
+              <p class="p3">We sent a link to your Email, for password</p>
+              <p class="p2">verification please check your email to</p>
+              <p class="p4">reset your passowrd!</p>
+              <button class="button" id="login1">Login</button>
+          </form>
+      </div>
+  </section>
+
+    <section class="homepage" id="homepageSection" style="display: none;">
+        <div class="nav21">
+          <!-- Logout Button -->
+          <button class="buttonlog" id="Buttonlogout">Logout</button>
+        </div>
+    </section>
+
+    <script src="iMovie.js" type="module"></script>
+    <script src="iMovie_Database.js" type="module"></script>
+  </body>
+</html>
